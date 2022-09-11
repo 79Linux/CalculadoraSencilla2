@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Resultado"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="#EAC5EC"
+        android:fontFamily="sans-serif-black"
+        android:text="0"
+        android:textColor="#1A1B1A"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/num_1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#F385DB"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:hint="Ingresar número"
+        android:inputType="number"
+        android:textColor="#F44336"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/num_2"
+        android:layout_width="928dp"
+        android:layout_height="128dp"
+        android:background="@color/purple_200"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:hint="Ingresar siguiente número"
+        android:inputType="number"
+        android:textAllCaps="true"
+        android:textColor="#111112"
+        android:textSize="24sp"
+        android:typeface="normal" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E4B0EA">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button_suma"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Suma"
+                android:textSize="24sp"
+                app:backgroundTint="#A32323" />
+
+            <Button
+                android:id="@+id/button_resta"
+                android:layout_width="166dp"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-black"
+                android:text="Resta"
+                android:textSize="24sp"
+                app:backgroundTint="#3F51B5" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button4_div"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="División"
+                android:textColor="#F3F2EF"
+                android:textSize="24sp"
+                app:backgroundTint="#FF9800" />
+
+            <Button
+                android:id="@+id/button_mult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Multiplicación"
+                android:textSize="16sp"
+                app:backgroundTint="#CDDC39" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
